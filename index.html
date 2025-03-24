@@ -9,53 +9,43 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thudumu Abhilash">
     <meta property="og:description" content="I'm a passionate Software Engineer with expertise in Deep Learning, Web Development, and Technical Problem-Solving.">
-    <title>Thudumu Abhilash | Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <title>Thudumu Abhilash | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body {
-            font-family: 'Fira Code', monospace;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #0d1117;
             color: #c9d1d9;
             text-align: center;
         }
-        header {
+        nav {
             background: #161b22;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1f6feb;
+        }
+        header {
+            padding: 50px;
+            font-size: 32px;
+            font-weight: bold;
         }
         section {
             padding: 50px 20px;
             max-width: 800px;
             margin: auto;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background: #58a6ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #1f6feb;
-        }
-        .typing {
-            font-size: 24px;
-            border-right: 2px solid white;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 0;
-            animation: typing 3s steps(30, end) forwards;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
         }
         .profile-img {
             width: 150px;
@@ -74,31 +64,63 @@
         .info h2 {
             color: #58a6ff;
         }
-        .info p {
-            font-size: 16px;
+        .typing {
+            font-size: 24px;
+            border-right: 2px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 15px;
+            background: linear-gradient(45deg, #58a6ff, #1f6feb);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <header>
         Thudumu Abhilash
     </header>
-    <section>
+    <section id="about">
         <img src="profile.jpg" alt="Profile Photo" class="profile-img">
         <h1 class="typing">Welcome to My Portfolio</h1>
         <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
-        
+    </section>
+    <section id="education">
         <div class="info">
             <h2>Education</h2>
             <p><strong>B.Tech in Computer Science & Engineering</strong></p>
             <p>IIT Tirupati | 2019 - 2023</p>
         </div>
-        
+    </section>
+    <section id="skills">
         <div class="info">
             <h2>Skills</h2>
             <p>Deep Learning, Web Development, SQL, Python, React, Strapi</p>
         </div>
-        
+    </section>
+    <section id="contact">
         <a href="https://github.com/tudumuabhilash" class="btn" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/tudumuabhilash" class="btn" target="_blank">LinkedIn</a>
         <a href="mailto:your-email@example.com" class="btn">Contact Me</a>

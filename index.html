@@ -9,50 +9,41 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thudumu Abhilash">
     <meta property="og:description" content="I'm a passionate Software Engineer with expertise in Deep Learning, Web Development, and Technical Problem-Solving.">
-    <title>Thudumu Abhilash | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Thudumu Abhilash | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Fira Code', monospace;
             margin: 0;
             padding: 0;
             background-color: #0d1117;
             color: #c9d1d9;
             text-align: center;
         }
-        nav {
-            background: #161b22;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        nav a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #1f6feb;
-        }
         header {
-            padding: 100px 20px 50px;
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 50px;
+            background: #161b22;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
         }
         section {
-            padding: 60px 20px;
-            max-width: 900px;
+            padding: 50px 20px;
+            max-width: 800px;
             margin: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #58a6ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #1f6feb;
         }
         .profile-img {
             width: 180px;
@@ -60,87 +51,67 @@
             border-radius: 50%;
             margin-top: 20px;
             border: 4px solid #58a6ff;
-            box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
         }
         .info {
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: left;
-            max-width: 700px;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            background: #161b22;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
         }
         .info h2 {
             color: #58a6ff;
-            border-bottom: 2px solid #58a6ff;
-            padding-bottom: 5px;
         }
-        .typing {
-            font-size: 26px;
-            border-right: 3px solid white;
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block;
-            width: 0;
-            animation: typing 3s steps(40, end) forwards;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            margin: 20px;
-            background: linear-gradient(45deg, #58a6ff, #1f6feb);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            font-size: 18px;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(88, 166, 255, 0.5);
+        .info p {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <header>
         Thudumu Abhilash
     </header>
-    <section id="about">
+    <section>
         <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-        <h1 class="typing">Welcome to My Portfolio</h1>
+        <h1>Welcome to My Portfolio</h1>
         <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
     </section>
-    <section id="education">
-        <div class="info">
-            <h2>Education</h2>
-            <p><strong>B.Tech in Computer Science & Engineering</strong></p>
-            <p>IIT Tirupati | 2019 - 2023</p>
-        </div>
+    
+    <section class="info">
+        <h2>About Me</h2>
+        <p>I'm a software engineer with a passion for AI, full-stack development, and problem-solving. Always eager to learn new technologies and build impactful projects.</p>
     </section>
-    <section id="skills">
-        <div class="info">
-            <h2>Skills</h2>
-            <p>Deep Learning, Web Development, SQL, Python, React, Strapi</p>
-        </div>
+
+    <section class="info">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science & Engineering</strong></p>
+        <p>IIT Tirupati | 2019 - 2023</p>
     </section>
-    <section id="contact">
+    
+    <section class="info">
+        <h2>Skills & Expertise</h2>
+        <p>Deep Learning, Web Development, SQL, Python, React, Strapi, C++, .NET</p>
+    </section>
+    
+    <section class="info">
+        <h2>Projects</h2>
+        <p><strong>Deep Learning for Pea Crop Yield Estimation</strong> - Comparative analysis using Vision Transformer.</p>
+        <p><strong>Flourish-Crumbs</strong> - A food-ordering app using Strapi & React.</p>
+        <p><strong>Cab Service Website</strong> - Built using React and Strapi.</p>
+    </section>
+    
+    <section class="info">
+        <h2>Experience</h2>
+        <p>Application Developer (Microsoft .NET Stack) - Hands-on experience in backend systems and software architecture.</p>
+    </section>
+    
+    <section class="info">
+        <h2>Contact & Socials</h2>
         <a href="https://github.com/tudumuabhilash" class="btn" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/tudumuabhilash" class="btn" target="_blank">LinkedIn</a>
-        <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
+        <a href="mailto:your-email@example.com" class="btn">Email Me</a>
     </section>
+    
     <script>
         gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "bounce" });
         gsap.from(".btn", { duration: 1, opacity: 0, stagger: 0.2 });

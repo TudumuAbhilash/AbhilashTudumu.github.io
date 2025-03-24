@@ -51,6 +51,26 @@
             from { width: 0; }
             to { width: 100%; }
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #58a6ff;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .info h2 {
+            color: #58a6ff;
+        }
+        .info p {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -58,8 +78,21 @@
         Thudumu Abhilash
     </header>
     <section>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
         <h1 class="typing">Welcome to My Portfolio</h1>
         <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
+        
+        <div class="info">
+            <h2>Education</h2>
+            <p><strong>B.Tech in Computer Science & Engineering</strong></p>
+            <p>IIT Tirupati | 2019 - 2023</p>
+        </div>
+        
+        <div class="info">
+            <h2>Skills</h2>
+            <p>Deep Learning, Web Development, SQL, Python, React, Strapi</p>
+        </div>
+        
         <a href="https://github.com/abhilashtuydumu" class="btn" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/abhilashtuydumu" class="btn" target="_blank">LinkedIn</a>
         <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
@@ -67,6 +100,7 @@
     <script>
         gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "bounce" });
         gsap.from(".btn", { duration: 1, opacity: 0, stagger: 0.2 });
+        gsap.from(".profile-img", { duration: 1, scale: 0.5, opacity: 0, ease: "elastic.out(1, 0.5)" });
     </script>
 </body>
 </html>

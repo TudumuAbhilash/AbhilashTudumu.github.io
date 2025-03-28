@@ -27,10 +27,33 @@
             padding: 20px;
             font-size: 24px;
         }
-        section {
-            padding: 50px 20px;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             max-width: 800px;
             margin: auto;
+            padding: 50px 20px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px; /* Square with rounded corners */
+            border: 4px solid #58a6ff;
+            margin-right: 20px;
+        }
+        .summary {
+            max-width: 500px;
+            text-align: left;
+        }
+        .summary h1 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        .summary p {
+            font-size: 16px;
         }
         .btn {
             display: inline-block;
@@ -45,71 +68,18 @@
         .btn:hover {
             background: #1f6feb;
         }
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 4px solid #58a6ff;
-        }
-        .info {
-            margin-top: 20px;
-            text-align: left;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .info h2 {
-            color: #58a6ff;
-        }
-        .info p {
-            font-size: 16px;
-        }
     </style>
 </head>
 <body>
     <header>
         Tudumu Abhilash
     </header>
-    <section>
+    <section class="container">
         <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-        <h1>Hello</h1>
-        <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
-    </section>
-    
-    <section class="info">
-        <h2>About Me</h2>
-        <p>I'm a software engineer with a passion for AI, full-stack development, and problem-solving. Always eager to learn new technologies and build impactful projects.</p>
-    </section>
-
-    <section class="info">
-        <h2>Education</h2>
-        <p><strong>B.Tech in Computer Science & Engineering</strong></p>
-        <p>IIT Tirupati | 2019 - 2023</p>
-    </section>
-    
-    <section class="info">
-        <h2>Skills & Expertise</h2>
-        <p>Deep Learning, Web Development, SQL, Python, React, Strapi, C++, .NET</p>
-    </section>
-    
-    <section class="info">
-        <h2>Projects</h2>
-        <p><strong>Deep Learning for Pea Crop Yield Estimation</strong> - Comparative analysis using Vision Transformer.</p>
-        <p><strong>Flourish-Crumbs</strong> - A food-ordering app using Strapi & React.</p>
-        <p><strong>Cab Service Website</strong> - Built using React and Strapi.</p>
-    </section>
-    
-    <section class="info">
-        <h2>Experience</h2>
-        <p>Application Developer (Microsoft .NET Stack) - Hands-on experience in backend systems and software architecture.</p>
-    </section>
-    
-    <section class="info">
-        <h2>Contact & Socials</h2>
-        <a href="https://github.com/tudumuabhilash" class="btn" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/tudumu-abhilash" class="btn" target="_blank">LinkedIn</a>
-        <a href="mailto:tabhilash814@gmail.com" class="btn">Email Me</a>
+        <div class="summary">
+            <h1>Hello</h1>
+            <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
+        </div>
     </section>
     
     <script>

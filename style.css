@@ -12,17 +12,18 @@ body {
 header {
     background: linear-gradient(90deg, #ff7e5f, #feb47b);
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Navigation */
 nav {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 nav a {
     color: white;
@@ -35,9 +36,25 @@ nav a:hover {
     color: #222;
 }
 
+/* Dark Mode Toggle */
+#theme-toggle {
+    background: white;
+    color: #ff7e5f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+#theme-toggle:hover {
+    background: #feb47b;
+    color: white;
+}
+
 /* Hero Section */
 #about {
-    padding: 100px 20px;
+    padding: 120px 20px 40px;
 }
 #about h2 {
     font-size: 2.5em;
@@ -63,6 +80,16 @@ nav a:hover {
 .project-card:hover {
     transform: scale(1.05);
 }
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-card a:hover {
+    text-decoration: underline;
+}
 
 /* Contact Section */
 #contact {
@@ -75,15 +102,36 @@ nav a:hover {
     text-decoration: none;
 }
 
-button {
-    background: #ff7e5f;
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
 }
-button:hover {
-    background: #feb47b;
+.dark-mode header {
+    background: #444;
+}
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+}
+.dark-mode button {
+    background: white;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    #projects {
+        grid-template-columns: 1fr;
+    }
 }

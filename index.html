@@ -3,89 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="follow, index">
-    <meta name="description" content="I'm a passionate Software Engineer with expertise in Deep Learning, Web Development, and Technical Problem-Solving. Get in touch to know more!">
-    <meta property="og:url" content="https://tudumuabhilash.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Tudumu Abhilash">
-    <meta property="og:description" content="I'm a passionate Software Engineer with expertise in Deep Learning, Web Development, and Technical Problem-Solving.">
-    <title>Tudumu Abhilash | Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <style>
-        body {
-            font-family: 'Fira Code', monospace;
-            margin: 0;
-            padding: 0;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            text-align: center;
-        }
-        header {
-            background: #161b22;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 10px; /* Square with rounded corners */
-            border: 4px solid #58a6ff;
-            margin-right: 20px;
-        }
-        .summary {
-            max-width: 500px;
-            text-align: left;
-        }
-        .summary h1 {
-            color: #58a6ff;
-            margin-bottom: 10px;
-        }
-        .summary p {
-            font-size: 16px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background: #58a6ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #1f6feb;
-        }
-    </style>
+    <title>Abhilash's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        Tudumu Abhilash
+        <h1>Thudumu Abhilash</h1>
+        <p>Application Developer | AI Researcher</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <section class="container">
-        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-        <div class="summary">
-            <h1>Hello</h1>
-            <p>B.Tech in Computer Science & Engineering from IIT Tirupati. Passionate about Deep Learning, Web Development, and Technical Problem-Solving.</p>
-        </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief intro about your experience, skills, and interests.</p>
     </section>
-    
-    <script>
-        gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "bounce" });
-        gsap.from(".btn", { duration: 1, opacity: 0, stagger: 0.2 });
-        gsap.from(".profile-img", { duration: 1, scale: 0.5, opacity: 0, ease: "elastic.out(1, 0.5)" });
-    </script>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="projects/project1.html">Project 1</a></li>
+            <li><a href="projects/project2.html">Project 2</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

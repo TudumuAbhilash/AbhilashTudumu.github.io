@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thudumu Abhilash | Portfolio</title>
+    <title>Portfolio | Thudumu Abhilash</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-fontawesome-key.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">01. About</a></li>
+            <li><a href="#experience">02. Experience</a></li>
+            <li><a href="#work">03. Work</a></li>
+            <li><a href="#contact">04. Contact</a></li>
+            <li><a href="resume.pdf" target="_blank" class="resume">Resume</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        <h1>Thudumu Abhilash</h1>
-        <p>Application Developer | AI Researcher</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button id="theme-toggle">🌙 Toggle Dark Mode</button>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an Application Developer and AI Researcher, passionate about Deep Learning, Web Development, and Problem Solving.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Deep Learning for Crop Yield Estimation</h3>
-            <p>Analyzed pea crop yield using Vision Transformer models.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Flourish-Crumbs</h3>
-            <p>A food-ordering app built with React and Strapi.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Cab Service Website</h3>
-            <p>Developed a cab booking website using React.</p>
-            <a href="#">View Project</a>
+    <section id="about" class="section">
+        <div class="about-container">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am an Application Developer and AI Researcher passionate about Deep Learning, Web Development, and Problem Solving.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="experience" class="section right-align">
+        <h2>Experience</h2>
+        <p>Worked on AI-based crop yield estimation, web development, and application support.</p>
+    </section>
+
+    <section id="work" class="section left-align">
+        <h2>Work</h2>
+        <div class="work-card">Deep Learning for Crop Yield Estimation</div>
+        <div class="work-card">Flourish-Crumbs (Food Ordering App)</div>
+        <div class="work-card">Cab Service Website</div>
+    </section>
+
+    <section id="contact" class="section center-align">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
         <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
     </section>
 
     <script src="script.js"></script>
